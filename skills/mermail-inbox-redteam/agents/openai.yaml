@@ -1,0 +1,11 @@
+interface:
+  display_name: "Mermail Inbox Red Team"
+  short_description: "Test whether an AI agent reading your inbox can be hijacked, and get a scorecard"
+  default_prompt: "Use $mermail-inbox-redteam to run the six-email hijack test on my test mailbox and score the result."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mermail"
+      description: "Mermail workspace and mailbox MCP server"
+      transport: "streamable_http"
+      url: "https://console.mermail.app/mcp"
